@@ -4,8 +4,10 @@
 ## the matrix and returns the cached value if exists otherwise creates
 ## the inverse. 
 
-## This function creates a list of functions that can be called 
-## using the cached values of x and m
+## 1. This function takes a matrix as it's input 
+## 2. Creates a vector of functions
+## 3. Caches the value of the inverse of the matrix passed
+## 4. Allows the value of the matrix to be changed using the set function 
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
